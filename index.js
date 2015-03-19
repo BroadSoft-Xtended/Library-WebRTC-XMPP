@@ -1,0 +1,1 @@
+module.exports = {view: require('./lib/views/authentication'), model: require('./lib/models/authentication')};

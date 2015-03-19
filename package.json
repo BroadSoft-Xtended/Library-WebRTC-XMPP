@@ -1,0 +1,27 @@
+{
+  "name": "webrtc-xmpp",
+  "version": "0.0.0",
+  "description": "xmpp module for webrtc client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "make"
+  },
+  "dependencies": {
+    "webrtc-core": "git+ssh://git.broadsoftlabs.net:7922/wrtc/webrtc-core.git"
+  },
+  "devDependencies": {
+    "templatizer": "1.2.1",
+    "mocha": "2.1.0",
+    "jsdom": "3.1.0",
+    "mocha-jsdom": "0.2.0",
+    "expect": "1.6.0",
+    "mocha-bamboo-reporter": "1.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.broadsoftlabs.net:7922/wrtc/xmpp.git"
+  },
+  "author": "Dominik Steiner",
+  "license": "ISC"
+}
