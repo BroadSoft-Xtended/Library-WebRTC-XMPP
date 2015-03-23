@@ -14,13 +14,13 @@ node_modules/models: lib/models
 
 ## Compile styles ##################################################################
 styles/css: $(STYLUS_FILES)
-	stylus --include-css styles/whiteboard.styl -o styles
+	stylus --include-css styles/xmpp.styl -o styles
 
 styles/min.css: styles/css
-	cssmin styles/*.css > styles/whiteboard.min.css
+	cssmin styles/*.css > styles/xmpp.min.css
 
 node_modules/bdsft-webrtc-styles.js: styles/min.css
-	node_modules/webrtc-core/scripts/export-style styles/whiteboard.min.css node_modules/bdsft-webrtc-styles.js
+	node_modules/webrtc-core/scripts/export-style styles/xmpp.min.css node_modules/bdsft-webrtc-styles.js
 
 ## Compile jade templates #########################################################
 js/templates.js: $(JADE_FILES)
