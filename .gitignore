@@ -1,2 +1,6 @@
-/node_modules
+/node_modules/*
+!node_modules/bdsft-webrtc-templates.js
+!node_modules/bdsft-webrtc-styles.js
+!node_modules/views
+!node_modules/models
 /styles/*.css
