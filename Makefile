@@ -4,8 +4,9 @@ STYLUS_FILES := $(shell glob-cli "styles/**/*.styl")
 
 JADE_FILES := $(shell glob-cli "templates/**/*.jade")
 
-all: node_modules/bdsft-webrtc-templates.js node_modules/bdsft-webrtc-styles.js node_modules/views node_modules/models
-
+all: node_modules/bdsft-webrtc-templates.js node_modules/bdsft-webrtc-styles.js symlinks
+symlinks: node_modules/views node_modules/models
+	
 node_modules/views: lib/views
 	ln -sf ../lib/views node_modules/views
 
