@@ -4,13 +4,12 @@
   "description": "xmpp module for webrtc client",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "symlinks"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "webrtc-core": "git+ssh://git.broadsoftlabs.net:7922/wrtc/webrtc-core.git"
   },
   "devDependencies": {
+    "webrtc-core": "git+ssh://git.broadsoftlabs.net:7922/wrtc/webrtc-core.git",
     "templatizer": "1.2.1",
     "mocha": "2.1.0",
     "jsdom": "3.1.0",
@@ -18,7 +17,8 @@
     "expect": "1.6.0",
     "mocha-bamboo-reporter": "1.0.6",
     "stylus": "^0.48.1",
-    "cssmin": "0.4.2"
+    "cssmin": "0.4.2",
+    "stylus-font-face": "1.0.0"
   },
   "repository": {
     "type": "git",
