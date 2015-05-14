@@ -24,7 +24,8 @@
     "expect": "1.6.0",
     "mocha-bamboo-reporter": "1.0.6",
     "stylus": "^0.48.1",
-    "cssmin": "0.4.2"
+    "cssmin": "0.4.2",
+    "stylus-font-face": "1.0.0"
   },
   "repository": {
     "type": "git",
