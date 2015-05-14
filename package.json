@@ -1,12 +1,20 @@
 {
   "name": "webrtc-xmpp",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "xmpp module for webrtc client",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "make"
   },
   "dependencies": {
+    "ampersand-collection": "^1.4.5",
+    "ampersand-filtered-subcollection": "^1.0.1",
+    "ampersand-grouped-collection-view": "^1.2.2",
+    "ampersand-select-view": "^3.0.0",
+    "ampersand-state": "^4.5.2",
+    "ampersand-view": "^7.3.0",
+    "otalk-chat-input-view": "^1.1.3"
   },
   "devDependencies": {
     "webrtc-core": "git+ssh://git.broadsoftlabs.net:7922/wrtc/webrtc-core.git",
@@ -17,8 +25,7 @@
     "expect": "1.6.0",
     "mocha-bamboo-reporter": "1.0.6",
     "stylus": "^0.48.1",
-    "cssmin": "0.4.2",
-    "stylus-font-face": "1.0.0"
+    "cssmin": "0.4.2"
   },
   "repository": {
     "type": "git",

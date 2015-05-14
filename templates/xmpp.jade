@@ -9,5 +9,10 @@
     .row
       .cell
       input.cell.login(type='button', value='Log In')
-  .content
-  .messages
+  .content(style='display:none')
+    p Pick a contact to chat with:
+    select.rosterSelect
+    p Message History:
+    .messages
+    p Send a chat:
+    textarea.chatInput
