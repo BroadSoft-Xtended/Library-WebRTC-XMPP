@@ -1,18 +1,19 @@
-.xmpp.fadeable.popup
-  .table.fixed.loginForm
-    .row
-      label.cell Name:
-      input.cell.name(type='text', name='name', placeholder='Email')
-    .row
-      label.cell Password:
-      input.cell.password(type='password', name='password')
-    .row
-      .cell
-      input.cell.login(type='button', value='Log In')
-  .content(style='display:none')
-    p Pick a contact to chat with:
-    select.rosterSelect
-    p Message History:
-    .messages
-    p Send a chat:
-    textarea.chatInput
+.bdsft-client
+  .xmpp.fadeable.popup.classes
+    .table.fixed.loginForm
+      .row
+        label.cell Name:
+        input.cell.name(type='text', name='name', placeholder='Email')
+      .row
+        label.cell Password:
+        input.cell.password(type='password', name='password')
+      .row
+        .cell
+        input.cell.login(type='button', value='Log In')
+    .content(style='display:none')
+      p Pick a contact to chat with:
+      select.rosterSelect
+      p Message History:
+      .messages
+      p Send a chat:
+      textarea.chatInput
