@@ -1,0 +1,5 @@
+{
+  "user": "testuser@domain.com",
+  "password" : "testpassword",
+  "xmppPassword": "testxmpppassword"
+}

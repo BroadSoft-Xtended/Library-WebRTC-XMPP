@@ -1,5 +1,5 @@
 .bdsft-webrtc
-  .xmpp.fadeable.popup.classes
+  .xmpp.fadeable.popup.classes.centered
     .table.fixed.loginForm
       .row
         label.cell Name:
@@ -9,11 +9,11 @@
         input.cell.password(type='password', name='password')
       .row
         .cell
-        input.cell.login(type='button', value='Log In')
-    .content(style='display:none')
-      p Pick a contact to chat with:
-      select.rosterSelect
-      p Message History:
-      .messages
-      p Send a chat:
-      textarea.chatInput
+        button.login.button(type='button') Connect
+    .content.fixed.table
+      .row
+        .rosterHolder.cell
+          select.rosterSelect(size='10')
+        .messagesHolder.cell
+          .messages
+          textarea.chatInput

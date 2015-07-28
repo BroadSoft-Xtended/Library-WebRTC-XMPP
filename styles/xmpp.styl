@@ -1,7 +1,26 @@
 .bdsft-webrtc
 	.xmpp
-		width 400px
-		height 200px
+		color #999
+		border-spacing 5px
+
+			display block
+
+		.messagesHolder 
+			display none
+			textarea
+				height 20px
+				font-size 12px
+		&.contact-selected .messagesHolder
+			display block
+
+		&.connected .content,
+		&:not(.connected) .loginForm
+			display block
+			
+		&.connected .loginForm,
+		&:not(.connected) .content
+			display none
+
 
 	.enableXMPP.xmpp-shown.xmpp
 		{fadeInPopup}

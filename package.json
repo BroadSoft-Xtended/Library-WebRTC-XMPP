@@ -14,10 +14,13 @@
     "ampersand-state": "^4.5.2",
     "ampersand-view": "^7.3.0",
     "otalk-chat-input-view": "^1.1.3",
+    "q": "1.4.1",
     "stanza.io": "7.0.7"
   },
   "devDependencies": {
-    "webrtc-core": "git+ssh://git.broadsoftlabs.net:7922/wrtc/webrtc-core.git",
+    "webrtc-core": "BroadSoft-Xtended/Library-WebRTC-Core.git",
+    "webrtc-dms": "BroadSoft-Xtended/Library-WebRTC-DMS.git",
+    "webrtc-sound": "BroadSoft-Xtended/Library-WebRTC-Sound.git",
     "templatizer": "1.2.1",
     "mocha": "2.1.0",
     "jsdom": "3.1.0",
@@ -26,11 +29,14 @@
     "mocha-bamboo-reporter": "1.0.6",
     "stylus": "^0.48.1",
     "cssmin": "0.4.2",
-    "stylus-font-face": "1.0.0"
+    "stylus-font-face": "1.0.0",
+    "extend": "3.0.0",
+    "chai": "1.9.1",
+    "chai-as-promised": "4.1.1"
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@git.broadsoftlabs.net:7922/wrtc/xmpp.git"
+    "url": "ssh://git@github.com:BroadSoft-Xtended/Library-WebRTC-XMPP.git"
   },
   "author": "Dominik Steiner",
   "license": "ISC"
