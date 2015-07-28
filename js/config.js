@@ -1,4 +1,4 @@
 module.exports = {
     enableXMPP: false,
-    boshURL: 'http://ums.broadsoftlabs.com:5280'
+    boshURL: 'https://ums.broadsoftlabs.com:5281'
 };
