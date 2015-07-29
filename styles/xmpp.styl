@@ -3,22 +3,20 @@
 		color #999
 		border-spacing 5px
 
-			display block
-
-		.messagesHolder 
+		.chat 
 			display none
 			textarea
 				height 20px
 				font-size 12px
-		&.contact-selected .messagesHolder
+		&.contactSelected .chat
 			display block
 
-		&.connected .content,
-		&:not(.connected) .loginForm
+		&.connected .contentView,
+		&:not(.connected) .loginView
 			display block
 			
-		&.connected .loginForm,
-		&:not(.connected) .content
+		&.connected .loginView,
+		&:not(.connected) .contentView
 			display none
 
 

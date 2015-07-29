@@ -1,6 +1,6 @@
 .bdsft-webrtc
-  .xmpp.fadeable.popup.classes.centered
-    .table.fixed.loginForm
+  .xmpp.fadeable.popup.classes.topright
+    .loginView.table.fixed
       .row
         label.cell Name:
         input.cell.name(type='text', name='name', placeholder='Email')
@@ -10,10 +10,9 @@
       .row
         .cell
         button.login.button(type='button') Connect
-    .content.fixed.table
+    .contentView.table.fixed
       .row
-        .rosterHolder.cell
-          select.rosterSelect(size='10')
-        .messagesHolder.cell
-          .messages
+        .contacts.cell
+        .chat.cell
+          .chatMessages
           textarea.chatInput

@@ -14,9 +14,19 @@
     var templatizer = {};
 
 
+    // contact.jade compiled template
+    templatizer["contact"] = function tmpl_contact() {
+        return '<div class="bdsft-webrtc"><div class="contact"><span class="presence"></span><span class="name"></span></div></div>';
+    };
+
+    // message.jade compiled template
+    templatizer["message"] = function tmpl_message() {
+        return '<div class="bdsft-webrtc"><div class="message"><span class="body"></span></div></div>';
+    };
+
     // xmpp.jade compiled template
     templatizer["xmpp"] = function tmpl_xmpp() {
-        return '<div class="bdsft-webrtc"><div class="xmpp fadeable popup classes centered"><div class="table fixed loginForm"><div class="row"><label class="cell">Name:</label><input type="text" name="name" placeholder="Email" class="cell name"/></div><div class="row"><label class="cell">Password:</label><input type="password" name="password" class="cell password"/></div><div class="row"><div class="cell"></div><button type="button" class="login button">Connect</button></div></div><div class="content fixed table"><div class="row"><div class="rosterHolder cell"><select size="10" class="rosterSelect"></select></div><div class="messagesHolder cell"><div class="messages"></div><textarea class="chatInput"></textarea></div></div></div></div></div>';
+        return '<div class="bdsft-webrtc"><div class="xmpp fadeable popup classes topright"><div class="loginView table fixed"><div class="row"><label class="cell">Name:</label><input type="text" name="name" placeholder="Email" class="cell name"/></div><div class="row"><label class="cell">Password:</label><input type="password" name="password" class="cell password"/></div><div class="row"><div class="cell"></div><button type="button" class="login button">Connect</button></div></div><div class="contentView table fixed"><div class="row"><div class="contacts cell"></div><div class="chat cell"><div class="chatMessages"></div><textarea class="chatInput"></textarea></div></div></div></div></div>';
     };
 
     return templatizer;
