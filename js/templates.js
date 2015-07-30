@@ -19,6 +19,11 @@
         return '<div class="chat"><div class="chatMessages"></div><textarea class="chatInput"></textarea><div class="name"></div></div>';
     };
 
+    // chattab.jade compiled template
+    templatizer["chattab"] = function tmpl_chattab() {
+        return '<div class="chatTab"><div class="chatTabContent"></div></div>';
+    };
+
     // contact.jade compiled template
     templatizer["contact"] = function tmpl_contact() {
         return '<div class="contact"><span class="presence"></span><span class="name"></span></div>';
@@ -31,7 +36,7 @@
 
     // xmpp.jade compiled template
     templatizer["xmpp"] = function tmpl_xmpp() {
-        return '<div class="bdsft-webrtc"><div class="xmpp fadeable classes topright"><div class="loginView table fixed"><div class="row"><label class="cell">Name:</label><input type="text" name="name" placeholder="Email" class="cell name"/></div><div class="row"><label class="cell">Password:</label><input type="password" name="password" class="cell password"/></div><div class="row"><div class="cell"></div><button type="button" class="login button">Connect</button></div></div><div class="contentView"><div class="contactsView"><div class="contactsContent"></div></div><div class="chatsView"><div class="chatsContent"></div></div></div></div></div>';
+        return '<div class="bdsft-webrtc"><div class="xmpp fadeable classes topright"><div class="loginView table fixed"><div class="row"><label class="cell">Name:</label><input type="text" name="name" placeholder="Email" class="cell name"/></div><div class="row"><label class="cell">Password:</label><input type="password" name="password" class="cell password"/></div><div class="row"><div class="cell"></div><button type="button" class="login button">Connect</button></div></div><div class="contentView"><div class="contactsView"><div class="contactsContent"></div></div><div class="chatsView"><div class="chatsContent"></div><div class="chatTabHolder"></div></div></div></div></div>';
     };
 
     return templatizer;
