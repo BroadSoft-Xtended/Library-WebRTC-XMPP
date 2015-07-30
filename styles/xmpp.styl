@@ -1,24 +1,31 @@
 .bdsft-webrtc
 	.xmpp
 		@require './jquery.ui.resizable.styl'
-		color #999
 		border-spacing 5px
 		padding 0
+		position absolute
 
 		.loginView
 			padding 10px
 		.contentView
-			min-width 300px
-			min-height 300px
-			height 100%
 			position relative
-			padding 10px
-			.contacts
-				float left
-		.chatsView 
-			display none
-			height 100%
-			overflow auto
+			.contactsView
+				border 1px solid black
+				position absolute
+				top 0
+				left 10px
+				min-width 150px
+				min-height 150px
+			.chatsView
+				border 1px solid black
+				display none
+				position absolute
+				top -150px
+				left 170px
+				height 100%
+				min-width 150px
+				min-height 150px
+				overflow auto
 
 		&.contactSelected .chatsView
 			display block

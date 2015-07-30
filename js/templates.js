@@ -31,7 +31,7 @@
 
     // xmpp.jade compiled template
     templatizer["xmpp"] = function tmpl_xmpp() {
-        return '<div class="bdsft-webrtc"><div class="xmpp fadeable popup classes topright"><div class="loginView table fixed"><div class="row"><label class="cell">Name:</label><input type="text" name="name" placeholder="Email" class="cell name"/></div><div class="row"><label class="cell">Password:</label><input type="password" name="password" class="cell password"/></div><div class="row"><div class="cell"></div><button type="button" class="login button">Connect</button></div></div><div class="contentView"><div class="contacts"></div><div class="chatsView"></div></div></div></div>';
+        return '<div class="bdsft-webrtc"><div class="xmpp fadeable classes topright"><div class="loginView table fixed"><div class="row"><label class="cell">Name:</label><input type="text" name="name" placeholder="Email" class="cell name"/></div><div class="row"><label class="cell">Password:</label><input type="password" name="password" class="cell password"/></div><div class="row"><div class="cell"></div><button type="button" class="login button">Connect</button></div></div><div class="contentView"><div class="contactsView"><div class="contactsContent"></div></div><div class="chatsView"><div class="chatsContent"></div></div></div></div></div>';
     };
 
     return templatizer;
