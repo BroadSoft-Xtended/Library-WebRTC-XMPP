@@ -26,7 +26,7 @@
 
     // contact.jade compiled template
     templatizer["contact"] = function tmpl_contact() {
-        return '<div class="contact"><span class="presence"></span><span class="name"></span></div>';
+        return '<div class="contact"><a class="close">close</a><span class="presence"></span><span class="name"></span><a class="remove">x</a></div>';
     };
 
     // message.jade compiled template
@@ -34,9 +34,19 @@
         return '<div class="message"><span class="body"></span></div>';
     };
 
+    // subscription.jade compiled template
+    templatizer["subscription"] = function tmpl_subscription() {
+        return '<div class="subscription"><span class="name"></span><button class="accept button">Accept</button><button class="deny button">Deny</button></div>';
+    };
+
+    // subscriptions.jade compiled template
+    templatizer["subscriptions"] = function tmpl_subscriptions() {
+        return '<div class="subscriptionsView"><div class="closeHolder"><a class="close">Close</a></div><div class="subscriptionsContent"></div></div>';
+    };
+
     // xmpp.jade compiled template
     templatizer["xmpp"] = function tmpl_xmpp() {
-        return '<div class="bdsft-webrtc"><div class="xmpp fadeable classes topright"><div class="loginView table fixed"><div class="row"><label class="cell">Name:</label><input type="text" name="name" placeholder="Email" class="cell name"/></div><div class="row"><label class="cell">Password:</label><input type="password" name="password" class="cell password"/></div><div class="row"><div class="cell"></div><button type="button" class="login button">Connect</button></div></div><div class="contentView"><div class="contactsView"><div class="contactsContent"></div></div><div class="chatsView"><div class="chatsContent"></div><div class="chatTabHolder"></div></div></div></div></div>';
+        return '<div class="bdsft-webrtc"><div class="xmpp fadeable classes topright"><div class="loginView table fixed"><div class="row"><label class="cell">Name:</label><input type="text" name="name" placeholder="Email" class="cell name"/></div><div class="row"><label class="cell">Password:</label><input type="password" name="password" class="cell password"/></div><div class="row"><div class="cell"></div><button type="button" class="login button">Connect</button></div></div><div class="contentView"><div class="contactsView"><div class="removeContactFailed"></div><div class="contactsContent"></div></div><div class="chatsView"><div class="chatsContent"></div><div class="chatTabHolder"></div></div><div class="subscriptionsHolder"></div></div></div></div>';
     };
 
     return templatizer;
