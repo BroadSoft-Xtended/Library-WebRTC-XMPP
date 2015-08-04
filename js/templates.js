@@ -16,7 +16,7 @@
 
     // addcontact.jade compiled template
     templatizer["addcontact"] = function tmpl_addcontact() {
-        return '<div class="addcontact"><div><a class="addLink">Add Contact</a><a class="cancelLink">Cancel</a></div><div class="form"><div class="table fixed"><div class="row"><span class="cell">	Jabber ID</span><input class="cell jid"/></div><div class="row"><span class="cell">	Name</span><input class="cell name"/></div></div><div><button class="button add">Add</button></div></div></div>';
+        return '<div class="addcontact"><div><a class="addLink">Add Contact</a><a class="cancelLink">Cancel</a></div><div class="form"><div class="table fixed"><div class="row"><span class="cell">Jabber ID</span><input class="cell jid"/></div><div class="row"><span class="cell">Name</span><input class="cell name"/></div></div><div><button class="button add">Add</button></div></div></div>';
     };
 
     // chat.jade compiled template
@@ -31,7 +31,7 @@
 
     // contact.jade compiled template
     templatizer["contact"] = function tmpl_contact() {
-        return '<div class="contact"><a class="close">close</a><span class="presence"></span><span class="name"></span><a class="remove">x</a></div>';
+        return '<div class="contact classes"><a class="close">close</a><span class="presence"></span><span class="name"></span><a class="remove">x</a></div>';
     };
 
     // message.jade compiled template
@@ -56,7 +56,7 @@
 
     // xmpp.jade compiled template
     templatizer["xmpp"] = function tmpl_xmpp() {
-        return '<div class="bdsft-webrtc"><div class="xmpp fadeable classes topright"><div class="loginView table fixed"><div class="row"><label class="cell">Name:</label><input type="text" name="name" placeholder="Email" class="cell name"/></div><div class="row"><label class="cell">Password:</label><input type="password" name="password" class="cell password"/></div><div class="row"><div class="cell"></div><button type="button" class="login button">Connect</button></div></div><div class="contentView"><div class="contactsView"><div class="removeContactFailed"></div><div class="myContactHolder"></div><div class="addContactHolder"></div><div class="contactsContent"></div></div><div class="chatsView"><div class="chatsContent"></div><div class="chatTabHolder"></div></div><div class="subscriptionsHolder"></div></div></div></div>';
+        return '<div class="bdsft-webrtc"><div class="xmpp fadeable classes topright"><div class="loginView table fixed"><div class="row"><label class="cell">Name:</label><input type="text" name="name" placeholder="Email" class="cell name"/></div><div class="row"><label class="cell">Password:</label><input type="password" name="password" class="cell password"/></div><div class="row"><div class="cell"></div><button type="button" class="login button">Connect</button></div></div><div class="contentView"><div class="contactsView"><div class="removeContactFailed error"></div><div class="myContactHolder"></div><div class="addContactHolder"></div><div class="contactsContent"></div></div><div class="chatsView"><div class="chatsContent"></div><div class="chatTabHolder"></div></div><div class="subscriptionsHolder"></div></div></div></div>';
     };
 
     return templatizer;
