@@ -1,14 +1,13 @@
 .bdsft-webrtc
   .xmpp.fadeable.classes.topright
-    .loginView.table.fixed
-      .row
-        label.cell Name:
-        input.cell.name(type='text', name='name', placeholder='Email')
-      .row
-        label.cell Password:
-        input.cell.password(type='password', name='password')
-      .row
-        .cell
+    .loginView
+      .form-row
+        label Name
+        input.name(type='text', name='name', placeholder='Email')
+      .form-row
+        label Password
+        input.password(type='password', name='password')
+      .form-row
         button.login.button(type='button') Connect
     .contentView
       .contactsView
