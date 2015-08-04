@@ -63,10 +63,12 @@
 				min-height 260px
 				background-color #F3F3F3
 				border 1px solid #D6D6D6
-				.contact.unavailable
-					{flicker}
-				.contact.available
+				.contact:not(.none).available
 					{fadeInAnimated}
+				.contact.unavailable
+				.contact.unsubscribed
+				.contact.none
+					{flicker}
 				.removeContactFailed
 					display none
 				.error
