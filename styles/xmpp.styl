@@ -54,46 +54,9 @@
 					text-align center
 		.contentView
 			position relative
-			.contactsView
-				border 1px solid black
-				position absolute
-				top 0
-				left 2px
-				min-width 280px
-				min-height 519px
-				background-color #F3F3F3
-				border 1px solid #D6D6D6
-				.contact:not(.none).available
-					{fadeInAnimated}
-				.contact.unavailable
-				.contact.unsubscribed
-				.contact.none
-					{flicker}
-				.removeContactFailed
-					display none
-				.error
-					color red
-			.chatsView
-				border 1px solid black
-				display none
-				position absolute
-				top 0px
-				left 220px
-				height 100%
-				min-width 150px
-				min-height 150px
-				width 150px
-				height 150px
-				overflow auto
-				.chatsContent
-					height 100%
-					margin-bottom -20px
 		a
 			text-decoration underline
 			
-		&.contactSelected .chatsView
-			display block
-
 		&.connected .contentView,
 		&:not(.connected) .loginView
 			display block

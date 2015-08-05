@@ -1,0 +1,21 @@
+.bdsft-webrtc
+	.contactsView
+		border 1px solid black
+		position absolute
+		top 0
+		left 2px
+		min-width 280px
+		min-height 519px
+		background-color #F3F3F3
+		border 1px solid #D6D6D6
+		.contact:not(.none):not(.remove):not(.unsubscribed).available
+			{fadeInAnimated}
+		.contact.remove
+		.contact.unavailable
+		.contact.unsubscribed
+		.contact.none
+			{flicker}
+		.removeContactFailed
+			display none
+		.error
+			color red

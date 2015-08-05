@@ -16,12 +16,17 @@
 
     // addcontact.jade compiled template
     templatizer["addcontact"] = function tmpl_addcontact() {
-        return '<div class="addcontact"><div><a class="addLink">+ Add Contact</a><a class="cancelLink">Cancel</a></div><div class="form"><div class="table fixed"><div class="row"><span class="cell">Jabber ID</span><input type="text" class="cell jid"/></div><div class="row"><span class="cell">Name</span><input type="text" class="cell name"/></div></div><div><button class="button add">Add</button></div></div></div>';
+        return '<div class="addcontact"><div><a class="addLink">+ Add Contact</a><a class="cancelLink">Cancel</a></div><div class="form"><div class="table fixed"><div class="row"><span class="cell">Account ID</span><input type="text" class="cell jid"/></div><div class="row"><span class="cell">Name</span><input type="text" class="cell name"/></div></div><div><button class="button add">Add</button></div></div></div>';
     };
 
     // chat.jade compiled template
     templatizer["chat"] = function tmpl_chat() {
-        return '<div class="chat"><div class="messages"></div><textarea class="input"></textarea><div class="name"></div></div>';
+        return '<div class="chat"><div class="messagesContent"></div><textarea class="input"></textarea><div class="name"></div></div>';
+    };
+
+    // chats.jade compiled template
+    templatizer["chats"] = function tmpl_chats() {
+        return '<div class="chatsView"><div class="chatsContent"></div><div class="chatTabHolder"></div></div>';
     };
 
     // chattab.jade compiled template
@@ -32,6 +37,11 @@
     // contact.jade compiled template
     templatizer["contact"] = function tmpl_contact() {
         return '<div class="contact classes"><a class="close">close</a><span class="presence"></span><span class="name"></span><a class="remove">x</a></div>';
+    };
+
+    // contacts.jade compiled template
+    templatizer["contacts"] = function tmpl_contacts() {
+        return '<div class="contactsView"><div class="removeContactFailed error"></div><div class="myContactHolder"></div><div class="addContactHolder"></div><div class="contactsContent"></div></div>';
     };
 
     // message.jade compiled template
@@ -51,12 +61,12 @@
 
     // subscriptions.jade compiled template
     templatizer["subscriptions"] = function tmpl_subscriptions() {
-        return '<div class="subscriptionsView"><div class="closeHolder"><a class="close">Close</a></div><div class="subscriptionsContent"></div></div>';
+        return '<div class="subscriptionsView classes"><div class="subscriptionsContent"></div></div>';
     };
 
     // xmpp.jade compiled template
     templatizer["xmpp"] = function tmpl_xmpp() {
-        return '<div class="bdsft-webrtc"><div class="xmpp fadeable classes topright"><div class="loginView"><div class="form-row"><label>Name</label><input type="text" name="name" placeholder="Email" class="name"/></div><div class="form-row"><label>Password</label><input type="password" name="password" class="password"/></div><div class="form-row"><button type="button" class="login button">Connect</button></div></div><div class="contentView"><div class="contactsView"><div class="removeContactFailed error"></div><div class="myContactHolder"></div><div class="addContactHolder"></div><div class="contactsContent"></div></div><div class="chatsView"><div class="chatsContent"></div><div class="chatTabHolder"></div></div><div class="subscriptionsHolder"></div></div></div></div>';
+        return '<div class="bdsft-webrtc"><div class="xmpp fadeable classes topright"><div class="loginView"><div class="form-row"><label>Name</label><input type="text" name="name" placeholder="Email" class="name"/></div><div class="form-row"><label>Password</label><input type="password" name="password" class="password"/></div><div class="form-row"><button type="button" class="login button">Connect</button></div></div><div class="contentView"><div class="contactsHolder"></div><div class="chatsHolder"></div><div class="subscriptionsHolder"></div></div></div></div>';
     };
 
     return templatizer;
