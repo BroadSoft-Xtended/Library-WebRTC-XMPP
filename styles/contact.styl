@@ -8,38 +8,43 @@
 		&:last-child
 			border-bottom 1px solid #DDD
 		.name
-			position absolute
+			display inline-block
 			font-weight bold
-			left 30px
-			top 11px
 			color #606060
 			cursor pointer
+			vertical-align bottom
+			line-height 11px
+			width 220px
+			text-overflow ellipsis
+			white-space nowrap
+			overflow hidden
 		.presence
 			width 12px
 			height 12px
-			display block
-			position absolute
-			top 15px
-			left 8px
-			background none
+			display inline-block
 			cursor pointer
+			vertical-align top
+			margin-left 10px
+			margin-right 12px
+			margin-top 14px
 		&.available .presence
 			color #54C523
+		&.busy .presence
+			color #FFC107
+		&.dnd .presence
+			color #F44336
+		&.unavailable .presence
+			color #9E9E9E
 		.close
 			display none
 		.remove
 			display none
-			position absolute
-			right 14px
-			top 14px
 			text-decoration none
-			width 14px
-			text-align center
-			line-height 13px
-			border-radius 10px
-			padding-bottom 2px
+			float right
 			font-size 16px
 			color #989898
+			margin-top 14px
+			margin-right 10px
 			&:hover
 				color #666
 		&:hover
