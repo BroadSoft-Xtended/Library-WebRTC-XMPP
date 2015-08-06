@@ -16,7 +16,7 @@
 
     // addcontact.jade compiled template
     templatizer["addcontact"] = function tmpl_addcontact() {
-        return '<div class="addcontact"><div><a class="addLink">+ Add Contact</a><a class="cancelLink">Cancel</a></div><div class="form"><div class="table fixed"><div class="row"><span class="cell">Account ID</span><input type="text" class="cell jid"/></div><div class="row"><span class="cell">Name</span><input type="text" class="cell name"/></div></div><div><button class="button add">Add</button></div></div></div>';
+        return '<div class="addcontact"><div class="controls"><a class="addLink"> <i class="icon-im-add-user"></i>Add Contact</a></div><div class="form"><div class="form-row"><input type="text" placeholder="Account ID" class="cell jid"/></div><div class="form-row"><input type="text" placeholder="Name" class="cell name"/></div><div class="form-row"><button class="cancelLink">Cancel</button><button class="button add">Add</button></div></div></div>';
     };
 
     // chat.jade compiled template

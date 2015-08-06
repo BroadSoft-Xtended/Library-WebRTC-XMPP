@@ -1,15 +1,14 @@
 .addcontact
-	div
-		a.addLink + Add Contact
-		a.cancelLink Cancel
+	div.controls
+		a.addLink 
+			i.icon-im-add-user
+			| Add Contact
 	.form
-		.table.fixed
-			.row
-				span.cell Account ID
-				input.cell.jid(type="text")
-			.row
-				span.cell Name
-				input.cell.name(type="text")
-		div
+		.form-row
+			input.cell.jid(type="text", placeholder="Account ID")
+		.form-row
+			input.cell.name(type="text", placeholder="Name")
+		.form-row
+			button.cancelLink Cancel
 			button.button.add Add
 

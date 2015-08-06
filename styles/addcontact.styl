@@ -1,28 +1,64 @@
 .bdsft-webrtc
 	.addcontact
-		margin-bottom: 14px;
+		margin-bottom 14px
+		padding 8px
+		background-color #E6E6E6
+		border-top 1px solid #D8D8D8
+		border-bottom 1px solid #D8D8D8
 		.addLink
 			border none
-			border-radius 0
+			border-radius 4px
 			padding 5px 10px
-			font-size 14px
+			font-size 13px
 			color #FFF
 			background-color #737373
 			text-align center
 			display inline-block
 			text-decoration none
-			margin-left 10px
+			i
+				margin-right 6px
+			&:hover
+				background #616161
 		.cancelLink
 			display none
 		.form
 			display none
-			span
-				width 65px
 			input
-				background white
-				color black
-				width 120px
-				font-size 12px
+				display block
+				background #FFFFFF
+				border 1px solid #D6D6D6
+				color #606060
+				font-size 14px
+				padding 8px
+				border-radius 0
+				margin-bottom: 8px;
+				width: 100%;
+				box-sizing: border-box;
+				&::-webkit-input-placeholder
+					color #D3D3D3
+				&:-moz-placeholder
+					color #D3D3D3
+				&::-moz-placeholder
+					color #D3D3D3
+				&:-ms-input-placeholder
+					color #D3D3D3
+			.form-row
+				button
+					border none
+					border-radius 4px
+					padding 5px 10px
+					font-size 13px
+					color #FFF
+					background-color #737373
+					text-align center
+					display inline-block
+					text-decoration none
+					margin-left 6px
+					&:hover
+						box-shadow none
+						background #616161
+				&:last-child
+					text-align right
 
 		&.addcontact-shown .cancelLink
 		&.addcontact-shown .form
