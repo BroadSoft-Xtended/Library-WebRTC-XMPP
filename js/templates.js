@@ -21,7 +21,7 @@
 
     // chat.jade compiled template
     templatizer["chat"] = function tmpl_chat() {
-        return '<div class="chat"><div class="messagesContent"></div><textarea class="input"></textarea><div class="name"></div></div>';
+        return '<div class="chat"><div class="name"></div><div class="messagesContent"></div><textarea placeholder="Type a message here" class="input"></textarea></div>';
     };
 
     // chats.jade compiled template

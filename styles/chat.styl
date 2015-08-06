@@ -1,10 +1,29 @@
 .bdsft-webrtc
 	.chat
 		display none
+		height 473px
+		position relative
 		.input
+			position absolute
+			bottom 0
 			width 100%
-			height 20px
-			font-size 12px
-		
+			height 100px
+			background #FFFFFF
+			border 1px solid #D6D6D6
+			color #606060
+			font-size 14px
+			padding 8px
+			border-radius 0
+			box-sizing border-box
+			border-right none
+			border-left 0
+			&::-webkit-input-placeholder
+				color #D3D3D3
+			&:-moz-placeholder
+				color #D3D3D3
+			&::-moz-placeholder
+				color #D3D3D3
+			&:-ms-input-placeholder
+				color #D3D3D3
 		&.selected
 			display block
