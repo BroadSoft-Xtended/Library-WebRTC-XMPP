@@ -36,7 +36,7 @@
 
     // contact.jade compiled template
     templatizer["contact"] = function tmpl_contact() {
-        return '<div class="contact classes"><a class="close">close</a><span class="presence"></span><span class="name"></span><a class="remove">x</a></div>';
+        return '<div class="contact classes"><a class="close"><i class="icon-im-cancel2"></i></a><span class="presence icon-im-circle"></span><span class="name"></span><a class="remove"><i class="icon-im-cancel2"></i></a></div>';
     };
 
     // contacts.jade compiled template

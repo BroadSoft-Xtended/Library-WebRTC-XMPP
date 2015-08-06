@@ -1,14 +1,61 @@
 .bdsft-webrtc
 	.chatTab
+		background-color #E0E0E0
 		.chatTabContent
 			.contact
 				display inline-block
-				border 1px solid black
-				margin 0px 5px
+				border none
+				width 140px
+				background-color #F5F5F5
+				border-right 1px solid #D6D6D6
+				&:hover
+					background-color #EEEEEE
 				&.selected
-					border 2px solid red
+					-webkit-box-shadow inset 0px 3px 0px 0px #03AFEF
+					-moz-box-shadow inset 0px 3px 0px 0px #03AFEF
+					box-shadow inset 0px 3px 0px 0px #03AFEF
 				.presence
+					position static
+					margin-top 15px
+					margin-left 10px
+					display inline-block
+					text-decoration none
+					font-size 14px
+					color #989898
+					background none
+					width 14px
+					height 14px
 				.remove
 					display none
+				.name
+					position static
+					font-size 13px
+					font-weight bold
+					color #606060
+					margin-left 8px
+					display inline-block
+					line-height 15px
+					vertical-align bottom
+					width 100px
+					text-overflow ellipsis
+					white-space nowrap
+					overflow hidden
+					cursor pointer
 				.close
-					display inline
+					display none
+					margin-top 15px
+					margin-left 10px
+					text-decoration none
+					font-size 14px
+					color #989898
+					width 14px
+					height 14px
+					&:hover
+						color #666
+				&:hover
+					.close
+						display inline-block
+					.presence
+						display none
+				&.available .presence
+					color #54C523
