@@ -1,5 +1,26 @@
 .bdsft-webrtc
 	.message
-		border 1px solid black
+		margin-top 10px
+		margin-bottom 10px
+		-webkit-filter drop-shadow(1px 1px 1px rgba(0, 0, 4, 0.1))
+		filter drop-shadow(1px 1px 1px rgba(0, 0, 4, 0.1))
 		.body
-			font-size 12px
+			font-size 13px
+			background-color #FFF
+			display block
+			width 190px
+			padding 6px
+			margin-left 14px
+			position relative
+			border-radius 4px
+			&:after
+				content ""
+				position absolute
+				width 0
+				height 0
+				border-width 10px
+				border-style solid
+				border-color transparent #FFFFFF transparent transparent
+				bottom 0
+				left -19px
+				border-bottom-width 0

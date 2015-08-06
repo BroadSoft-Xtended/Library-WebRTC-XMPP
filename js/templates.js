@@ -46,7 +46,7 @@
 
     // message.jade compiled template
     templatizer["message"] = function tmpl_message() {
-        return '<div class="message"><span class="body"></span></div>';
+        return '<div class="message"><p class="body"></p></div>';
     };
 
     // mycontact.jade compiled template
