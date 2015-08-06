@@ -1,24 +1,48 @@
 .bdsft-webrtc
 	.mycontact
 		margin 10px
+		padding-top 6px
+		padding-bottom 6px
 		.presence
-			background #868686
-			width 13px
-			height 13px
-			border-radius 13px
+			background #607D8B
+			box-shadow rgba(96, 125, 139, 0.5) 0 0 0 3px
+			width 42px
+			height 42px
+			border-radius 42px
 			display inline-block
-			margin-left 2px
+			margin-right 8px
+			vertical-align top
+			margin-left 4px
+			i
+				display inline-block
+				width 100%
+				text-align center
+				margin-top 8px
+				font-size 22px
+				color #FFF
 		&.available .presence 
-			background #54C523
-		.name
-			font-weight bold
-			margin 0 5px
-			font-size 18px
-			color #616161
+			background #8BC34A
+			box-shadow rgba(139, 195, 74, 0.5) 0 0 0 3px
+			margin-right 10px
+		.name-container
 			display inline-block
-		.presenceSelect
-			display block
-			width 80px
-			background-color rgba(0, 0, 0, 0)
-			border none
-			width 80px
+			margin-top -2px
+			.name
+				font-weight bold
+				margin 0 5px
+				font-size 16px
+				color #616161
+				display block
+				width 192px
+				text-overflow ellipsis
+				white-space nowrap
+				overflow hidden
+				margin-bottom 3px
+			.presenceSelect
+				display block
+				width 77px
+				background-color rgba(0, 0, 0, 0)
+				border none
+				font-size 12px
+				&:focus
+					outline none

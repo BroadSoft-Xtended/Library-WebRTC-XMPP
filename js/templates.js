@@ -51,7 +51,7 @@
 
     // mycontact.jade compiled template
     templatizer["mycontact"] = function tmpl_mycontact() {
-        return '<div class="mycontact"><span class="presence"></span><span class="name"></span><select class="presenceSelect"></select></div>';
+        return '<div class="mycontact"><span class="presence"><i class="icon-im-user"></i></span><div class="name-container"><span class="name"></span><select class="presenceSelect"></select></div></div>';
     };
 
     // subscription.jade compiled template
