@@ -6,13 +6,14 @@
 		filter drop-shadow(1px 1px 1px rgba(0, 0, 4, 0.1))
 		.body
 			font-size 13px
-			background-color #FFF
+			background-color #2196F3
 			display block
 			width 190px
-			padding 6px
+			padding 8px
 			margin-left 14px
 			position relative
 			border-radius 4px
+			color #FFF
 			&:after
 				content ""
 				position absolute
@@ -20,7 +21,19 @@
 				height 0
 				border-width 10px
 				border-style solid
-				border-color transparent #FFFFFF transparent transparent
+				border-color transparent #2196F3 transparent transparent
 				bottom 0
-				left -19px
+				left -18px
 				border-bottom-width 0
+		&.incoming
+			text-align right
+			.body
+				background-color #8BC34A
+				margin-right 14px
+				display inline-block
+				&:after
+					border-color transparent transparent transparent #8BC34A
+					bottom 0
+					right -8px
+					left auto
+					border-right-width 0
