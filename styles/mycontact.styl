@@ -10,7 +10,7 @@
 			height 42px
 			border-radius 42px
 			display inline-block
-			margin-right 8px
+			margin-right 10px
 			vertical-align top
 			margin-left 4px
 			i
@@ -23,7 +23,15 @@
 		&.available .presence 
 			background #8BC34A
 			box-shadow rgba(139, 195, 74, 0.5) 0 0 0 3px
-			margin-right 10px
+		&.dnd .presence 
+			background #B71C1C
+			box-shadow rgba(183, 28, 28, 0.5) 0 0 0 3px
+		&.away .presence 
+			background #E65100
+			box-shadow rgba(230, 81, 0, 0.5) 0 0 0 3px
+		&.unavailable .presence 
+			background #212121
+			box-shadow rgba(33, 33, 33, 0.5) 0 0 0 3px
 		.name-container
 			display inline-block
 			margin-top -2px
