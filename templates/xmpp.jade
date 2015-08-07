@@ -1,14 +1,15 @@
 .bdsft-webrtc
   .xmpp.fadeable.classes.topright
     .loginView
-      .form-row
-        label Name
-        input.name(type='text', name='name', placeholder='Email')
-      .form-row
-        label Password
-        input.password(type='password', name='password')
-      .form-row
-        button.login.button(type='button') Connect
+      .form
+        .logo-container
+          i.icon-im-bubbles2
+        .form-row
+          input.name(type='text', name='name', placeholder='Email')
+        .form-row
+          input.password(type='password', name='password', placeholder="Password")
+        .form-row
+          button.login.button(type='button') Connect
     .contentView
       .contactsHolder
       .chatsHolder
