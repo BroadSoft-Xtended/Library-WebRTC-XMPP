@@ -44,6 +44,11 @@
         return '<div class="contactsView"><div class="removeContactFailed error"></div><div class="myContactHolder"></div><div class="addContactHolder"></div><div class="contactsContent"></div></div>';
     };
 
+    // handle.jade compiled template
+    templatizer["handle"] = function tmpl_handle() {
+        return '<div class="bdsft-webrtc"><div class="xmppHandle classes"><a class="toggleVisibility icon-im-bubble"></a></div></div>';
+    };
+
     // message.jade compiled template
     templatizer["message"] = function tmpl_message() {
         return '<div class="message classes"><p class="body"></p></div>';
