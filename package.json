@@ -11,7 +11,8 @@
     "jquery-ui": "1.10.5",
     "q": "1.4.1",
     "stanza.io": "7.0.7",
-    "event-emitter": "0.3.3"
+    "event-emitter": "0.3.3",
+    "extend": "3.0.0"
   },
   "devDependencies": {
     "webrtc-core": "BroadSoft-Xtended/Library-WebRTC-Core.git",
@@ -26,7 +27,6 @@
     "stylus": "^0.48.1",
     "cssmin": "0.4.2",
     "stylus-font-face": "1.0.0",
-    "extend": "3.0.0",
     "chai": "1.9.1",
     "chai-as-promised": "4.1.1"
   },
