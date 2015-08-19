@@ -28,4 +28,18 @@ describe('client', function() {
   it('connect with wrong password', function() {
     return client.connect({jid: config.user, password: 'wrongpassword'}).should.eventually.be.rejected;
   });
+
+  describe('after connect', function(){
+    before(function() {
+      return client.connect({jid: config.user, password: config.xmppPassword});
+    });
+    after(function(){
+      return client.disconnect();
+    });
+
+    it('getRoster', function() {
+      return client.getRoster().should.eventually.be.fulfilled;
+    });
+
+  });
 });
