@@ -24,5 +24,5 @@ module.exports = {
 	subscriptions: require('./lib/models/subscriptions'),
 	subscriptionsview: require('./lib/views/subscriptions'),
 	client: require('./lib/client'),
-	eventbus: require('webrtc-core').eventbus
+	eventbus: require('bdsft-sdk-eventbus').model
 };

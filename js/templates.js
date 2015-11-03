@@ -16,7 +16,7 @@
 
     // addcontact.jade compiled template
     templatizer["addcontact"] = function tmpl_addcontact() {
-        return '<div class="addcontact"><div class="controls"><a class="addLink"> <i class="icon-im-add-user"></i>Add Contact</a></div><div class="form"><div class="form-row"><input type="text" placeholder="Account ID" class="cell jid"/></div><div class="form-row"><input type="text" placeholder="Name" class="cell name"/></div><div class="form-row"><button class="cancelLink">Cancel</button><button class="button add">Add</button></div></div></div>';
+        return '<div class="addcontact"><div class="controls"><a class="addLink"> <i class="icon-im-add-user"></i>Add Contact</a></div><div class="form"><div class="form-row"><input type="text" placeholder="type name" class="cell input"/><div class="search"><div class="searchResultsContent"></div><div class="searching">Searching...</div></div></div><div class="form-row"><button class="cancelLink">Cancel</button><button class="button add">Add</button></div></div></div>';
     };
 
     // chat.jade compiled template
@@ -42,6 +42,11 @@
     // contacts.jade compiled template
     templatizer["contacts"] = function tmpl_contacts() {
         return '<div class="contactsView"><div class="removeContactFailed error"></div><div class="myContactHolder"></div><div class="addContactHolder"></div><div class="contactsContent"></div></div>';
+    };
+
+    // directorydetail.jade compiled template
+    templatizer["directorydetail"] = function tmpl_directorydetail() {
+        return '<div class="directorydetail classes"><span class="firstName"></span><span class="lastName"></span></div>';
     };
 
     // handle.jade compiled template

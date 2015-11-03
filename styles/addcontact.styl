@@ -60,6 +60,18 @@
 				&:last-child
 					text-align right
 
+		.search
+			position absolute
+			background-color #fbfbfb
+			border 1px solid #ddd
+			z-index 999
+			.searchResultsContent
+			.searching
+				display none
+
+		&.searching .searching
+			display block
+
 		&.addcontact-shown .cancelLink
 		&.addcontact-shown .form
 			display block

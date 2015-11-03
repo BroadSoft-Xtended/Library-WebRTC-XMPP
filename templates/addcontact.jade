@@ -5,9 +5,11 @@
 			| Add Contact
 	.form
 		.form-row
-			input.cell.jid(type="text", placeholder="Account ID")
-		.form-row
-			input.cell.name(type="text", placeholder="Name")
+			input.cell.input(type="text", placeholder="type name")
+			.search
+				.searchResultsContent
+				.searching
+					| Searching...
 		.form-row
 			button.cancelLink Cancel
 			button.button.add Add

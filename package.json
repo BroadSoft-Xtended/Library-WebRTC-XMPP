@@ -7,6 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "webrtc-core": "BroadSoft-Xtended/Library-WebRTC-Core.git",
+    "webrtc-dms": "BroadSoft-Xtended/Library-WebRTC-DMS.git",
+    "webrtc-sound": "BroadSoft-Xtended/Library-WebRTC-Sound.git",
+    "bdsft-sdk-xsi": "BroadSoft-Xtended/Library-SDK-XSI.git",
+    "bdsft-sdk-request": "BroadSoft-Xtended/Library-SDK-Request.git",
+    "bdsft-sdk-eventbus": "BroadSoft-Xtended/Library-SDK-Eventbus.git",
+    "bdsft-sdk-utils": "BroadSoft-Xtended/Library-SDK-Utils.git",
+    "bdsft-sdk-view": "BroadSoft-Xtended/Library-SDK-View.git",
+    "bdsft-sdk-model": "BroadSoft-Xtended/Library-SDK-Model.git",
+    "bdsft-sdk-debug": "BroadSoft-Xtended/Library-SDK-Debug.git",
     "jquery": "2.1.3",
     "jquery-ui": "1.10.5",
     "q": "1.4.1",
@@ -15,20 +25,7 @@
     "extend": "3.0.0"
   },
   "devDependencies": {
-    "webrtc-core": "BroadSoft-Xtended/Library-WebRTC-Core.git",
-    "webrtc-dms": "BroadSoft-Xtended/Library-WebRTC-DMS.git",
-    "webrtc-sound": "BroadSoft-Xtended/Library-WebRTC-Sound.git",
-    "templatizer": "1.2.1",
-    "mocha": "2.1.0",
-    "jsdom": "3.1.0",
-    "mocha-jsdom": "0.2.0",
-    "expect": "1.6.0",
-    "mocha-bamboo-reporter": "1.0.6",
-    "stylus": "^0.48.1",
-    "cssmin": "0.4.2",
-    "stylus-font-face": "1.0.0",
-    "chai": "1.9.1",
-    "chai-as-promised": "4.1.1"
+    "bdsft-sdk-test": "BroadSoft-Xtended/Library-SDK-Test.git"
   },
   "repository": {
     "type": "git",

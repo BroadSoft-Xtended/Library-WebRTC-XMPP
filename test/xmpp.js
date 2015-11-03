@@ -1,16 +1,15 @@
-var test = require('../node_modules/webrtc-core/test/includes/common');
-var extend = require('extend');
-var chai = require("chai");
-chai.use(require("chai-as-promised"));
-var should = chai.should();
-
+var test = require('bdsft-sdk-test').core;
 describe('xmpp', function() {
 
   before(function() {
     test.createModelAndView('xmpp', {
         xmpp: require('../'),
         sound: require('webrtc-sound'),
-        dms: require('webrtc-dms')
+        dms: require('webrtc-dms'),
+        request: require('bdsft-sdk-request'),
+        xsi: require('bdsft-sdk-xsi'),
+        debug: require('bdsft-sdk-debug'),
+        core: require('webrtc-core')
     });
     config = require('./config/default.json');
     try {
