@@ -7,16 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "webrtc-core": "BroadSoft-Xtended/Library-WebRTC-Core.git",
-    "webrtc-dms": "BroadSoft-Xtended/Library-WebRTC-DMS.git",
-    "webrtc-sound": "BroadSoft-Xtended/Library-WebRTC-Sound.git",
-    "bdsft-sdk-xsi": "BroadSoft-Xtended/Library-SDK-XSI.git",
-    "bdsft-sdk-request": "BroadSoft-Xtended/Library-SDK-Request.git",
-    "bdsft-sdk-eventbus": "BroadSoft-Xtended/Library-SDK-Eventbus.git",
-    "bdsft-sdk-utils": "BroadSoft-Xtended/Library-SDK-Utils.git",
-    "bdsft-sdk-view": "BroadSoft-Xtended/Library-SDK-View.git",
-    "bdsft-sdk-model": "BroadSoft-Xtended/Library-SDK-Model.git",
-    "bdsft-sdk-debug": "BroadSoft-Xtended/Library-SDK-Debug.git",
+    "webrtc-core": "BroadSoft-Xtended/Library-WebRTC-Core",
+    "webrtc-dms": "BroadSoft-Xtended/Library-WebRTC-DMS",
+    "webrtc-sound": "BroadSoft-Xtended/Library-WebRTC-Sound",
+    "bdsft-sdk-xsi": "BroadSoft-Xtended/Library-SDK-XSI",
+    "bdsft-sdk-request": "BroadSoft-Xtended/Library-SDK-Request",
+    "bdsft-sdk-eventbus": "BroadSoft-Xtended/Library-SDK-Eventbus",
+    "bdsft-sdk-utils": "BroadSoft-Xtended/Library-SDK-Utils",
+    "bdsft-sdk-view": "BroadSoft-Xtended/Library-SDK-View",
+    "bdsft-sdk-model": "BroadSoft-Xtended/Library-SDK-Model",
+    "bdsft-sdk-debug": "BroadSoft-Xtended/Library-SDK-Debug",
     "jquery": "2.1.3",
     "jquery-ui": "1.10.5",
     "q": "1.4.1",
@@ -25,11 +25,11 @@
     "extend": "3.0.0"
   },
   "devDependencies": {
-    "bdsft-sdk-test": "BroadSoft-Xtended/Library-SDK-Test.git"
+    "bdsft-sdk-test": "BroadSoft-Xtended/Library-SDK-Test"
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:BroadSoft-Xtended/Library-WebRTC-XMPP.git"
+    "url": "ssh://git@github.com:BroadSoft-Xtended/Library-WebRTC-XMPP"
   },
   "author": "Dominik Steiner",
   "license": "ISC"
